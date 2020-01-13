@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--头信息从mybatis官网拷贝  http://www.mybatis.cn/680.html-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 属性：定义配置外在化 -->
+    <!--<properties></properties>-->
+    <!-- 设置：定义mybatis的一些全局性设置 -->
+    <settings>
+        <!-- 具体的参数名和参数值 -->
+        <!--全局缓存 默认true-->
+        <setting name="cacheEnabled" value="false"/>
+        <!--懒加载 默认false-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--执行器 有效值SIMPLE REUSE BATCH 默认SIMPLE ；reuse 有助提高性能-->
+        <setting name="defaultExecutorType" value="REUSE"/>
+        <!--驱动等待服务器响应时间-->
+        <setting name="defaultStatementTimeout" value="1000"/>
+    </settings>
+    <!-- 类型名称：为一些类定义别名 -->
+    <!--<typeAliases></typeAliases>-->
+    <!-- 类型处理器：定义Java类型与数据库中的数据类型之间的转换关系 -->
+    <!--<typeHandlers></typeHandlers>-->
+    <!-- 对象工厂 -->
+    <!--<objectFactory type=""></objectFactory>-->
+    <!-- 插件：mybatis的插件,插件可以修改mybatis的内部运行规则 -->
+    <!--<plugins>
+        <plugin interceptor=""></plugin>
+    </plugins>-->
+    <!-- 环境：配置mybatis的环境 -->
+    <!--<environments default="">
+        &lt;!&ndash; 环境变量：可以配置多个环境变量，比如使用多数据源时，就需要配置多个环境变量 &ndash;&gt;
+        <environment id="">
+            &lt;!&ndash; 事务管理器 &ndash;&gt;
+            <transactionManager type=""></transactionManager>
+            &lt;!&ndash; 数据源 &ndash;&gt;
+            <dataSource type=""></dataSource>
+        </environment>
+    </environments>-->
+    <!-- 数据库厂商标识 -->
+    <!--<databaseIdProvider type=""></databaseIdProvider>-->
+    <!-- 映射器：指定映射文件或者映射类 -->
+    <!--<mappers>
+        <mapper resource="mapper/*.xml"></mapper>
+    </mappers>-->
+</configuration>
