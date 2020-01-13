@@ -1,7 +1,7 @@
 ## Mybatis-SpringBoot
     本项目是一个简单的用户的增删改查Demo
     学习过程中写Demo总会需要这样一个基础demo,所以放在github上
--
+<br/>
 * dao层框架：Mybatis
 * 数据库连接池：durid
 * 分页插件：pageHelper
