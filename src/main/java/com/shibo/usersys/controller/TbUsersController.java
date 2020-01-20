@@ -35,6 +35,7 @@ public class TbUsersController {
             e.printStackTrace();
             logger.error("TbUsersController selectAll()", e);
             responsBo=new ResponsBo(false,null,"异常");
+            return responsBo;
         }
         responsBo=new ResponsBo(true,tbUsers,"成功");
         return responsBo;
@@ -57,6 +58,7 @@ public class TbUsersController {
             e.printStackTrace();
             logger.error("TbUsersController selectFor()", e);
             responsBo=new ResponsBo(false,null,"异常");
+            return responsBo;
         }
         responsBo=new ResponsBo(true,tbUserListInfo,"成功");
         return responsBo;
